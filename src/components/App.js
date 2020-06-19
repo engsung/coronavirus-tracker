@@ -42,9 +42,6 @@ class App extends Component{
                 found: true
             });
         }
-
-        // console.log(this.state.data.Global.NewConfirmed);
-        //console.log(this.state.country);
     }
 
     countryRender() {

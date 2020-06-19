@@ -1,13 +1,14 @@
 import React from 'react';
+import "./Statistics.css";
 
 const Statistics = (props) => {
     return (
-        <div className="ui segment">
+        <div className="ui segment stat">
             <h1> {props.title} </h1>
             <div className="ui two statistics">
                 <div className="statistic">
                     <div className="value">
-                        {props.totalConfirmed}
+                        <p>{props.totalConfirmed}</p>
                     </div>
                     <div className="label">
                         Total Cases
@@ -15,7 +16,7 @@ const Statistics = (props) => {
                 </div>
                 <div className="statistic">
                     <div className="value">
-                        {props.newConfirmed}
+                        <p>{props.newConfirmed}</p>
                     </div>
                     <div className="label">
                         New Cases
@@ -25,7 +26,7 @@ const Statistics = (props) => {
             <div className="ui two statistics">
                 <div className="statistic">
                     <div className="value">
-                        {props.totalDeaths}
+                        <p>{props.totalDeaths}</p>
                     </div>
                     <div className="label">
                         Total Deaths
@@ -33,7 +34,7 @@ const Statistics = (props) => {
                 </div>
                 <div className="statistic">
                     <div className="value">
-                        {props.newDeaths}
+                        <p>{props.newDeaths}</p>
                     </div>
                     <div className="label">
                         New Deaths
@@ -43,7 +44,7 @@ const Statistics = (props) => {
             <div className="ui two statistics">
                 <div className="statistic">
                     <div className="value">
-                        {props.totalRecovered}
+                        <p>{props.totalRecovered}</p>
                     </div>
                     <div className="label">
                         Total Reocvered
@@ -51,7 +52,7 @@ const Statistics = (props) => {
                 </div>
                 <div className="statistic">
                     <div className="value">
-                        {props.newRecovered}
+                        <p>{props.newRecovered}</p>
                     </div>
                     <div className="label">
                         New Recovered
