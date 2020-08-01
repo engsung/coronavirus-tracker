@@ -6,7 +6,7 @@ import Statistics from './Statistics';
 class App extends Component{
     constructor() {
         super();
-        this.state = { data: {}, global:{}, country: {}, found: false };
+        this.state = { data: {}, global:{}, country: null, found: false };
     }
 
     async componentDidMount() {
@@ -34,9 +34,9 @@ class App extends Component{
     }
 
     onSearchSubmit = (term) => {
-        const result = this.state.data.Countries.filter(nation => nation.Country.toLowerCase() === term.toLowerCase());
+        var result = this.state.data.Countries.filter(nation => nation.Country.toLowerCase() === term.toLowerCase());
 
-        if (result){
+        if (result.length){
             this.setState({ 
                 country: result[0],
                 found: true
